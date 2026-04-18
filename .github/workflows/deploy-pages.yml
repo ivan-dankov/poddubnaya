@@ -1,3 +1,5 @@
+# One-time: Repo → Settings → Pages → Build and deployment → Source: GitHub Actions.
+# Until that is set, configure-pages fails with "Get Pages site failed" (API 404).
 name: Deploy to GitHub Pages
 
 on:
@@ -40,4 +42,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
