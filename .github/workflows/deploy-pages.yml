@@ -1,5 +1,5 @@
-# One-time: Repo → Settings → Pages → Build and deployment → Source: GitHub Actions.
-# Until that is set, configure-pages fails with "Get Pages site failed" (API 404).
+# Pages must use "GitHub Actions" as the publishing source (Settings → Pages).
+# See: https://docs.github.com/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 name: Deploy to GitHub Pages
 
 on:
@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Prepare site bundle
         run: |
@@ -32,11 +32,8 @@ jobs:
           cp index.html _site/
           cp -r css js _site/
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
