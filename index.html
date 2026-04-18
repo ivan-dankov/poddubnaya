@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Курсы массажа в Варшаве. Обучение с нуля, практические навыки, старт карьеры за 2 недели.">
+    <title>Школа Массажа в Варшаве | Анастасия Поддубная</title>
+    
+    <!-- Google Fonts: Unbounded (Display) & Inter (Body) - Full Cyrillic Support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Russo+One&family=Unbounded:wght@400;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">PODDUBNAYA</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link" data-text="Обо мне">Обо мне</a></li>
+                    <li><a href="#courses" class="nav-link" data-text="Курсы">Курсы</a></li>
+                    <li><a href="#reviews" class="nav-link" data-text="Отзывы">Отзывы</a></li>
+                    <li><a href="#contact" class="nav-link" data-text="Контакты">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta-group">
+                 <a href="#contact" class="btn btn-primary btn-sm"><span>Записаться</span></a>
+                 <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-text">MASSAGE</div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-meta">
+                        <span class="location-tag">📍 ВАРШАВА</span>
+                        <span class="date-tag">СТАРТ КАЖДУЮ НЕДЕЛЮ</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="line reveal-text">ТВОЯ НОВАЯ</span>
+                        <span class="line reveal-text text-orange">ПРОФЕССИЯ</span>
+                        <span class="line reveal-text">ЗА 14 ДНЕЙ</span>
+                    </h1>
+                    <p class="hero-subtitle reveal-text delay-1">
+                        Освой востребованный навык и начни зарабатывать сразу после обучения. 
+                        Без "воды", только работающие техники.
+                    </p>
+                    <div class="hero-cta reveal-text delay-2">
+                        <a href="#contact" class="btn btn-primary"><span>Хочу на курс</span></a>
+                        <a href="#courses" class="btn btn-link">Программа обучения ↓</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-img">
+                    <div class="image-mask">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop" alt="Процесс обучения" class="hero-image">
+                    </div>
+                    <div class="floating-badge">
+                        <span class="badge-val">80%</span>
+                        <span class="badge-lbl">ПРАКТИКИ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee Line -->
+        <div class="marquee-section">
+            <div class="marquee-content">
+                <span>МАССАЖ • ОБУЧЕНИЕ • СЕРТИФИКАТ • ПРАКТИКА • ТРУДОУСТРОЙСТВО • ВАРШАВА • </span>
+                <span>МАССАЖ • ОБУЧЕНИЕ • СЕРТИФИКАТ • ПРАКТИКА • ТРУДОУСТРОЙСТВО • ВАРШАВА • </span>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <section class="features" id="why-me">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">ПОЧЕМУ <br><span class="text-stroke">ВЫБИРАЮТ МЕНЯ?</span></h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <span class="feature-num">01</span>
+                        <h3>БЕЗ ВОДЫ</h3>
+                        <p>Я ценю твое время. Мы учим только то, что реально пригодится в работе с клиентами.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-num">02</span>
+                        <h3>РЕЗУЛЬТАТ</h3>
+                        <p>Мои ученики начинают зарабатывать уже в процессе обучения или сразу после.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-num">03</span>
+                        <h3>ОПЫТ</h3>
+                        <p>Прошла путь от новичка до топ-мастера. Знаю все подводные камни и секреты.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses -->
+        <section class="courses" id="courses">
+            <div class="container">
+                <div class="courses-header">
+                    <h2 class="section-title">ПРОГРАММЫ</h2>
+                    <p class="section-desc">Выбери свой путь развития</p>
+                </div>
+                
+                <div class="courses-list">
+                    <!-- Course 1 -->
+                    <article class="course-row">
+                        <div class="course-info">
+                            <span class="course-cat">БАЗА</span>
+                            <h3 class="course-title">КЛАССИЧЕСКИЙ МАССАЖ</h3>
+                            <p class="course-desc">Фундамент профессии. Постановка рук, эргономика, анатомия и основные техники.</p>
+                            <ul class="course-tags">
+                                <li>2 ДНЯ</li>
+                                <li>ИНТЕНСИВ</li>
+                                <li>СЕРТИФИКАТ</li>
+                            </ul>
+                        </div>
+                        <div class="course-action">
+                            <a href="#contact" class="btn btn-outline"><span>Записаться</span></a>
+                        </div>
+                        <div class="course-img-reveal">
+                            <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop" alt="Классика">
+                        </div>
+                    </article>
+
+                    <!-- Course 2 -->
+                    <article class="course-row featured">
+                        <div class="course-info">
+                            <span class="course-cat text-orange">ХИТ ПРОДАЖ</span>
+                            <h3 class="course-title">АНТИЦЕЛЛЮЛИТ + ЛИМФА</h3>
+                            <p class="course-desc">Самые востребованные техники коррекции фигуры. Результат виден после первого сеанса.</p>
+                            <ul class="course-tags">
+                                <li>1 ДЕНЬ</li>
+                                <li>ПРАКТИКА</li>
+                                <li>ТОП ЗАРАБОТОК</li>
+                            </ul>
+                        </div>
+                        <div class="course-action">
+                            <a href="#contact" class="btn btn-primary"><span>Записаться</span></a>
+                        </div>
+                         <div class="course-img-reveal">
+                            <img src="https://images.unsplash.com/photo-1519823551278-64ac927ac4ad?q=80&w=1974&auto=format&fit=crop" alt="Антицеллюлитный">
+                        </div>
+                    </article>
+
+                    <!-- Course 3 -->
+                    <article class="course-row">
+                        <div class="course-info">
+                            <span class="course-cat">ЭСТЕТИКА</span>
+                            <h3 class="course-title">СКУЛЬПТУРНЫЙ ЛИЦА</h3>
+                            <p class="course-desc">Безоперационная подтяжка. Буккальные техники, работа с мышцами лица.</p>
+                            <ul class="course-tags">
+                                <li>1 ДЕНЬ</li>
+                                <li>WORKSHOP</li>
+                                <li>МОДЕЛИ</li>
+                            </ul>
+                        </div>
+                        <div class="course-action">
+                            <a href="#contact" class="btn btn-outline"><span>Записаться</span></a>
+                        </div>
+                         <div class="course-img-reveal">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop" alt="Лицо">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="container about-layout">
+                <div class="about-visual">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="Анастасия" class="about-img-main">
+                    <div class="about-badge-circle">
+                        <svg viewBox="0 0 100 100" width="100" height="100">
+                            <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
+                            <text>
+                                <textPath xlink:href="#circlePath">ANASTASIA • PODDUBNAYA •</textPath>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">КТО <span class="text-orange">ВЕДЕТ?</span></h2>
+                    <p class="lead-text">Я знаю, как страшно менять жизнь. Я делала это сама.</p>
+                    <p>От работника мясокомбината до востребованного мастера с полной записью. Я не теоретик, я практик. Моя задача — дать тебе ремесло, которое всегда прокормит.</p>
+                    
+                    <div class="stats-row">
+                        <div class="stat-box">
+                            <span class="stat-n">6+</span>
+                            <span class="stat-l">ЛЕТ ОПЫТА</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-n">100+</span>
+                            <span class="stat-l">УЧЕНИКОВ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="section-title">ОТЗЫВЫ</h2>
+                <div class="reviews-scroller">
+                    <div class="review-card">
+                        <p class="r-text">"Анастасия объясняет всё на пальцах. Я боялась, но уже принимаю клиентов!"</p>
+                        <div class="r-author">
+                            <span class="r-name">Мария К.</span>
+                            <span class="r-course">Курс: Классика</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="r-text">"Лучшая инвестиция. Окупила обучение за 3 недели. Спасибо за поддержку!"</p>
+                        <div class="r-author">
+                            <span class="r-name">Алексей Д.</span>
+                            <span class="r-course">Курс: Антицеллюлитный</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <p class="r-text">"Много практики, никакой лишней теории. Руки поставили отлично."</p>
+                        <div class="r-author">
+                            <span class="r-name">Елена В.</span>
+                            <span class="r-course">Курс: Лицо</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="container contact-wrapper">
+                <div class="contact-header">
+                    <h2 class="section-title">ЗАПИСЬ <br>НА <span class="text-stroke">КУРС</span></h2>
+                    <div class="contact-direct">
+                        <a href="tel:+48000000000">+48 000 000 000</a>
+                        <a href="https://instagram.com/poddubnayamassaz" target="_blank">@poddubnayamassaz</a>
+                    </div>
+                </div>
+                
+                <form class="editorial-form" id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder="ИМЯ">
+                        <span class="input-border"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="phone" required placeholder="ТЕЛЕФОН">
+                        <span class="input-border"></span>
+                    </div>
+                    <div class="input-group">
+                        <select id="course" required>
+                            <option value="" disabled selected>ВЫБЕРИТЕ КУРС</option>
+                            <option value="classic">Классический</option>
+                            <option value="anticellulite">Антицеллюлитный</option>
+                            <option value="face">Лицо</option>
+                        </select>
+                        <span class="input-border"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width"><span>ОТПРАВИТЬ ЗАЯВКУ</span></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="#" class="footer-logo">PODDUBNAYA</a>
+                <p>© 2026 Варшава</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Instagram</a>
+                <a href="#">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
